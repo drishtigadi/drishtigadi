@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="274" viewBox="0 0 1200 274">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="496" viewBox="0 0 1200 496">
   <defs>
     <linearGradient id="bannerGrad" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#2e1065"/>
@@ -13,20 +13,25 @@
     <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
       <feGaussianBlur stdDeviation="9"/>
     </filter>
-    <clipPath id="noBottom"><rect x="0" y="0" width="1200" height="274"/></clipPath>
-    <clipPath id="cardClip"><rect x="16" y="16" width="1168" height="258" rx="0"/></clipPath>
+    <clipPath id="noBottom"><rect x="0" y="0" width="1200" height="480"/></clipPath>
+    <clipPath id="cardClip"><rect x="16" y="16" width="1168" height="464" rx="0"/></clipPath>
     <style>
       .title { font: 700 72px "Segoe UI", Helvetica, Arial, sans-serif; fill: #ffffff; }
       .mono { font: 500 18px "DejaVu Sans Mono", Consolas, "Courier New", monospace; fill: #e9d5ff; }
+      .ah { font: 700 24px "Segoe UI", Helvetica, Arial, sans-serif; fill: #f3e8ff; }
+      .ab { font: 400 18px "Segoe UI", Helvetica, Arial, sans-serif; fill: #d4c8f5; }
+      .al { font: 600 18px "Segoe UI", Helvetica, Arial, sans-serif; fill: #c084fc; }
       .prompt { font: 700 18px "DejaVu Sans Mono", Consolas, "Courier New", monospace; fill: #c084fc; }
+      .h2 { font: 700 20px "Segoe UI", Helvetica, Arial, sans-serif; fill: #f3e8ff; }
+      .body { font: 400 15px "Segoe UI", Helvetica, Arial, sans-serif; fill: #c4b5fd; }
     </style>
   </defs>
 
   <!-- glow outline -->
-  <rect x="16" y="16" width="1168" height="258" rx="0" fill="none" stroke="#a855f7" stroke-width="6" filter="url(#glow)" clip-path="url(#noBottom)">
+  <rect x="16" y="16" width="1168" height="464" rx="0" fill="none" stroke="#a855f7" stroke-width="6" filter="url(#glow)">
     <animate attributeName="opacity" values="0.55;1;0.55" dur="4s" repeatCount="indefinite"/>
   </rect>
-  <rect x="16" y="16" width="1168" height="258" rx="0" fill="#0d1117"/>
+  <rect x="16" y="16" width="1168" height="464" rx="0" fill="#0d1117"/>
 
   <!-- banner -->
   <g clip-path="url(#cardClip)">
@@ -124,4 +129,13 @@
     </rect>
   </g>
 
+  <!-- about me -->
+  <line x1="60" y1="282" x2="1140" y2="282" stroke="#2a2340" stroke-width="1"/>
+  <text x="60" y="326" class="ah">About me</text>
+  <circle cx="66" cy="364" r="4" fill="#a855f7"/>
+  <text x="82" y="370" class="ab">Management Engineering @UWaterloo</text>
+  <circle cx="66" cy="398" r="4" fill="#a855f7"/>
+  <text x="82" y="404" class="ab">Interested in Product, Business Strategy, Operations and AI</text>
+  <circle cx="66" cy="432" r="4" fill="#a855f7"/>
+  <text x="82" y="438" class="ab">I love yapping and learning! Let's connect: <tspan class="al">linkedin.com/in/drishti-gadi</tspan></text>
 </svg>
